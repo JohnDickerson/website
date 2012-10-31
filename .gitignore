@@ -1,7 +1,8 @@
-*.gem
-*.rbc
-.bundle
-.config
+# Directories to ignore
+.hg
+.svn
+.CVS
+.idea
 coverage
 InstalledFiles
 lib/bundler/man
@@ -12,7 +13,34 @@ test/tmp
 test/version_tmp
 tmp
 
+# Extensions to ignore
+*.gem
+*.rbc
+*.log
+*~
+*.swp
+*.swo
+._*
+.bundle
+.config
+*.diff
+*.zip
+*.vi
+*.sass-cache
+
 # YARD artifacts
 .yardoc
 _yardoc
 doc/
+
+# Linux/OSX artifacts
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
