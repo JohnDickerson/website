@@ -1,0 +1,31 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title John P. Dickerson
+    %meta{:name => "description", :content => "Personal website for John P. Dickerson"}
+    %meta{:name => "author", :content => "John P. Dickerson"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+
+    %link{:href => "/public/bootstrap/bootstrap/css/bootstrap.min.css", :type => "text/css", :rel => "stylesheet"}
+    %link{:href => "/public/css/styles.css", :type => "text/css", :rel => "stylesheet"}
+    %link{:href => "/public/bootstrap/bootstrap/css/bootstrap-responsive.min.css", :type => "text/css", :rel => "stylesheet"}
+      
+    / IE 6-8 can now load HTML5  
+    :plain
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      
+    %script{:type => "text/javascript", :src => "/js/jquery-1.8.2.min.js"}
+    
+    
+          
+  %body		
+    =haml :navbar
+
+    .container
+      = yield
+
+    / Load Bootstrap plugins after this point
+    %script{:type => "text/javascript", :src => "/public/bootstrap/bootstrap/js/bootstrap.min.js"}
