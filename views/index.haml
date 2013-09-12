@@ -1,34 +1,21 @@
-/
-  .jumbotron
-    %h1 Research!
-    %p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 
-#myCarousel.carousel.slide
-  .carousel-inner
-    .item.active
-      %img{:src => "/img/slide-01.jpg", :alt => "Kidney exchange background image"}
-      .container
-        .carousel-caption
-          %h1 Kidney exchange.
-          %p.lead At CMU, we
-          %a.btn.btn-large.btn-primary{:href => "#"} View More
-    .item
-      %img{:src => "/img/slide-02.jpg", :alt => "Television advertising background image"}
-      .container
-        .carousel-caption
-          %h1 TV advertising.
-          %p.lead XX
-          %a.btn.btn-large.btn-primary{:href => "#"} View Project
-    .item
-      %img{:src => "/img/slide-01.jpg", :alt => "Counterterrorism background image"}
-      .container
-        .carousel-caption
-          %h1 Counter-terrorism.
-          %p.lead XX
-          %a.btn.btn-large.btn-primary{:href => "#"} See More
 
-  %a.left.carousel-control{:href => "#myCarousel", :"data-slide" => "prev"} &lsaquo;
-  %a.right.carousel-control{:href => "#myCarousel", :"data-slide" => "next"} &rsaquo;
+.row.featurette
+  .col-md-7
+    %h2.featurette-heading
+      First featurette heading.
+    %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        
+  .col-md-5
+    %img.featurette-image.img-responsive{ :src => "img/headshot_barcelona_500.jpg", :alt => "John P. Dickerson" }
 
-%hr
-  
+%hr.featurette-divider
+
+.row.featurette
+  .col-md-7
+    %h2.featurette-heading
+      First featurette heading.
+    %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        
+  .col-md-5
+    %img.featurette-image.img-responsive{ :src => "data:image/png;base64,", :"data-src" => "holder.js/500x500/auto", :alt => "Generic placeholder image" }

@@ -1,16 +1,20 @@
-.masthead
-  %h3.muted John P. Dickerson
-  .navbar
-    .navbar-inner
-      .container
-        %ul.nav
-          %li.active
-            %a{:href => "#"} Home
-          %li
-            %a{:href => "#"} Research
-          %li
-            %a{:href => "#"} Publications
-          %li
-            %a{:href => "#"} Service
-          %li
-            %a{:href => "#"} C.V.
+.navbar.navbar-inverse.navbar-static-top
+  .container
+    .navbar-header
+      %button.navbar-toggle{:type => "button", :"data-collapse" => "collapse", :"data-target" => ".navbar-collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#"} John P. Dickerson
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        %li.active
+          %a{:href => "#"} Home
+        %li
+          %a{:href => "#"} Research
+        %li
+          %a{:href => "#"} Publications
+        %li
+          %a{:href => "#"} Service
+        %li
+          %a{:href => "files/dickerson.john.p.cv.pdf"} C.V.
