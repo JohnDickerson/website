@@ -9,7 +9,8 @@
 
     %link{:href => "/bootstrap/css/bootstrap.min.css", :type => "text/css", :rel => "stylesheet"}
     %link{:href => "/css/styles.css", :type => "text/css", :rel => "stylesheet"}
-    
+    %link{:href => "/css/sticky-footer.css", :type => "text/css", :rel => "stylesheet"}
+
     / IE 6-8 can now load HTML5  
     :plain
       <!--[if lt IE 9]>
@@ -22,10 +23,19 @@
           
   %body
 
-    =haml :navbar
+    #wrap
+      =haml :navbar
 
-    .container.marketing
-      =yield
+      .container.marketing
+        =yield
+
+
+    =haml :footer
 
     / Load Bootstrap plugins after this point
     %script{:type => "text/javascript", :src => "/bootstrap/js/bootstrap.min.js"}
+    
+    / When the site's complete, remove this
+    %script{:type => "text/javascript", :src => "/js/holder.min.js"}
+
+
