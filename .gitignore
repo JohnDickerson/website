@@ -37,8 +37,6 @@ doc/
 .DS_Store
 Thumbs.db
 .cache
-.project
-.settings
 .tmproj
 *.esproj
 nbproject

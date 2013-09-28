@@ -1,8 +1,12 @@
 require 'sinatra'
 require 'rubygems'
 
-get '/research/?' do
+configure do
 
+end
+
+get '/research/?' do
+  
   haml :research
 end
 
