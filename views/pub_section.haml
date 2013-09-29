@@ -1,6 +1,11 @@
 .row.featurette
+  - if parity == :right
+    .col-md-4
   .col-md-8
+    %a{:name => "#{aname}"}
     %h2= header
-    - pub_map.each do |year, pub_keys|
+    - pub_map.sort.reverse.map do |year, pub_keys|
       %h3= year
       = rep_pubs_list(pub_keys)
+  - if parity == :left
+    .col-md-4
