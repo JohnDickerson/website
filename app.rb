@@ -5,9 +5,12 @@ configure do
 
 end
 
-get '/research/?' do
-  
+get '/research/?' do  
   haml :research
+end
+
+get '/publications/?' do
+  haml :publications
 end
 
 get '/' do

@@ -1,0 +1,17 @@
+.jumbotron
+  %h1 Publications
+  %ul.list-inline
+    %li Conference
+    %li Journal
+    %li Workshop
+    %li Book Chapters
+    %li Other
+
+%hr.featurette-divider
+
+= render(:haml,:'pub_section',:locals => { |
+:header => "Conference Papers", |
+:pub_map => {2013 => ['Dickerson13:Failure'], |
+  2012 => ['Dickerson12:Dynamic', 'Dickerson12:Optimizing']} }) |
+
+%hr.featurette-divider

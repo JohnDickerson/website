@@ -1,0 +1,6 @@
+.row.featurette
+  .col-md-8
+    %h2= header
+    - pub_map.each do |year, pub_keys|
+      %h3= year
+      = rep_pubs_list(pub_keys)
