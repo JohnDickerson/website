@@ -11,6 +11,7 @@ $ROOT = File.expand_path("../", __FILE__)
 Dir.glob(File.dirname(__FILE__) + '/helpers/*.rb') {|f| load f}
 Dir.glob(File.dirname(__FILE__) + '/routes/*.rb') {|f| load f}
 
+puts "Reading from bibliography file; this may take a while ..."
 # Convert .bib file to a Ruby data structure, long version
 $bib = BibTeX.open('public/files/dickerson.bib')
 $bib.each do |obj|
@@ -25,7 +26,7 @@ $bib_short.each do |obj|
 end
 
 $bib_citestyle = :mla
-
+puts "Finished translating .bib to string hash
 
 
 require "#{$ROOT}/app.rb"
