@@ -6,6 +6,6 @@
     %h2= header
     - pub_map.sort.reverse.map do |year, pub_keys|
       %h3= year
-      = rep_pubs_list(pub_keys)
+      = rep_pubs_list(pub_keys, include_links)
   - if parity == :left
     .col-md-4
