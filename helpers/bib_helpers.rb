@@ -6,7 +6,7 @@ helpers do
     out = "<ul class='list-unstyled'>"
     
     out += bib_keys.uniq.map do |bib_key| 
-      "<li>
+      "<li><span class='glyphicon glyphicon-chevron-right'></span>
 #{cite_to_link($bib[bib_key])}
 </li>"
     end.join
@@ -16,7 +16,7 @@ helpers do
 
 
   def cite_to_link(bib_struct)
-    CiteProc.process bib_struct.to_citeproc, :style => :apa
+    CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle
   end
 
 end

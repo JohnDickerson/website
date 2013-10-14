@@ -11,22 +11,27 @@ $ROOT = File.expand_path("../", __FILE__)
 Dir.glob(File.dirname(__FILE__) + '/helpers/*.rb') {|f| load f}
 Dir.glob(File.dirname(__FILE__) + '/routes/*.rb') {|f| load f}
 
-puts "Reading from bibliography file; this may take a while ..."
-# Convert .bib file to a Ruby data structure, long version
-$bib = BibTeX.open('public/files/dickerson.bib')
-$bib.each do |obj|
-  obj.replace($bib.q('@string'))
-end
+if $bib.nil? or $bib_short.nil?
+   puts "Reading from bibliography file; this may take a while ..."
+   # Convert .bib file to a Ruby data structure, long version
+   $bib = BibTeX.open('public/files/dickerson.bib')
+   $bib.each do |obj|
+     obj.replace($bib.q('@string'))
+   end
 
-# Convert .bib file to a Ruby data structure, long version
-$bib_short = BibTeX.open('public/files/dickerson.bib')
-$short_names = BibTeX.open('public/files/short_names.bib')
-$bib_short.each do |obj|
-  obj.replace($short_names.q('@string'))
-end
+   # Convert .bib file to a Ruby data structure, long version
+   $bib_short = BibTeX.open('public/files/dickerson.bib')
+   $short_names = BibTeX.open('public/files/short_names.bib')
+   $bib_short.each do |obj|
+     obj.replace($short_names.q('@string'))
+   end
 
-$bib_citestyle = :mla
-puts "Finished translating .bib to string hash
+   $bib_citestyle = :apa   # :mla
+   puts "Finished translating .bib to string hash"
+
+else	
+   puts "Already loaded .bib files"
+end
 
 
 require "#{$ROOT}/app.rb"
