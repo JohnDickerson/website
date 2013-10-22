@@ -11,13 +11,13 @@ get '/research/?' do
 end
 
 # List of all publications
-get '/publications/?' do
+get '/pubs/?' do
   haml :publications
 end
 
-# Eventually, auto-generate individual pages per publication
-get '/publication/:title' do
-  haml :publications
+# Grab a {.pdf, .pptx} for a specific publication
+get '/pubs/:title' do
+  #send_file File.join(settings.public_folder, params[:title]+'.pdf')
 end
 
 # Home page (links to all the other main pages)

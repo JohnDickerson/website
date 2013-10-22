@@ -8,7 +8,7 @@ helpers do
     out += bib_keys.uniq.map do |bib_key| 
       "<li><span class='glyphicon glyphicon-chevron-right'></span>
 #{cite_to_link($bib[bib_key])} " +
-        ((include_links == true) ? "[<a href=\"#{bib_key_to_link(bib_key)}\">link</a>]" : "") + 
+        ((include_links == true) ? "[<a href=\"/pubs/#{bib_key_to_link(bib_key)}.pdf\">link</a>]" : "") + 
         "</li>"
     end.join
     
