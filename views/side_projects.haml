@@ -1,0 +1,47 @@
+.jumbotron
+  %h1 Side Projects
+  %p Academic projects I've led or with which I've been involved.
+  %ul.list-inline
+    %li 
+      %a{:href => "#track-it"} Eye Tracking
+    %li 
+      %a{:href => "#gorillas"} Gorilla Networks
+
+%hr.featurette-divider
+
+%a{:name => "track-it"}
+.row.featurette
+  .col-md-4
+    %img.featurette-image.img-responsive{:src => "data:image/png;base64,", :"data-src" => "holder.js/500x300/auto", :alt => "Eye Tracking."}
+
+  .col-md-8
+    %h2.featurette-heading
+      Eye Tracking.
+    %p.lead
+      2011&mdash;Present
+    %p
+      xxx
+    %h4 
+      Representative Publications
+    = rep_pubs_list(['Fisher13:Assessing', 'Thiessen12:Eyes'], true)
+
+
+%hr.featurette-divider
+
+%a{:name => "gorillas"}
+.row.featurette
+  .col-md-8
+    %h2.featurette-heading
+      Social Networking.
+    %p.lead
+      2011&mdash;Present
+    %p
+      xxx
+    %h4 Representative Publications
+    %p.text-muted Coming soon!  Papers in preparation.
+
+  .col-md-4
+    %img.featurette-image.img-responsive{:src => "data:image/png;base64,", :"data-src" => "holder.js/500x300/auto", :alt => "Social Networking."}
+
+
+%hr.featurette-divider

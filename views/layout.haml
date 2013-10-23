@@ -2,7 +2,10 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
-    %title John P. Dickerson
+    - if not defined? @subtitle
+      %title John P. Dickerson
+    - else
+      %title #{@subtitle} &mdash; John P. Dickerson
     %meta{:name => "description", :content => "Personal website for John P. Dickerson"}
     %meta{:name => "author", :content => "John P. Dickerson"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
