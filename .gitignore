@@ -1,3 +1,8 @@
+
+# Emacs
+\#*
+.#*
+
 # Directories to ignore
 .hg
 .svn
