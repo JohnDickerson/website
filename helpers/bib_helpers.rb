@@ -15,9 +15,9 @@ helpers do
     out += "</ul>"
   end
 
-
+  # Processes a bibtex entry into a human-readable string, and removes all {s and }s.
   def cite_to_link(bib_struct)
-    CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle
+    (CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle).delete "{}"
   end
 
   # Translate a bib_key that looks like "NameYear:Title" into a URL
