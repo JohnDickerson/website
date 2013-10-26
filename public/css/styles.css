@@ -1,12 +1,12 @@
 .center-x{text-align:center;}
 .center-y{vertical-align:middle;}
-
 .center{
     float: none;
     margin-left: auto;
     margin-right: auto;
 }
 
+.top-space{margin-top:10px;}
 .mini-jumbo{padding-top:10px; padding-bottom:10px;}
 .index-hero{}
 .index-contact{background-color:#f5f5f5;}
