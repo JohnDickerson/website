@@ -23,6 +23,12 @@ get '/pubs/:title' do
 end
 
 # Lists side projects (similar to research page)
+get '/industry/?' do
+  @subtitle = "Industry Experience"
+  haml :industry
+end
+
+# Lists side projects (similar to research page)
 get '/side_projects/?' do
   @subtitle = "Side Projects"
   haml :side_projects
