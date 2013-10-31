@@ -1,13 +1,20 @@
-.jumbotron
-  %h1 Research
-  %p Academic projects I've led or with which I've been involved.
+.header-jumbo
+  <h1> Research <small> :: Major academic projects and thesis work.</small> </h1>
+
   %ul.list-inline
     %li 
-      %a{:href => "#kidney"} Kidney Exchange
+      %a{:href => "#kidney"} 
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Kidney Exchange
+      
     %li 
-      %a{:href => "#ads"} Dynamic Advertising
+      %a{:href => "#ads"}
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Dynamic Advertising
     %li
-      %a{:href => "#ct"} Counter-terrorism
+      %a{:href => "#ct"}
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Counter-terrorism
 
 
 %hr.featurette-divider
@@ -67,15 +74,19 @@
       Counter-terrorism.
     %p.lead
       2008&mdash;Present
+  .col-md-4
+
+.row
+  .col-md-8
     %p
-      Terrorism
+      Large-scale analysis of terror groups incorporates 
 
     %h4 
       Representative Publications
     = rep_pubs_list(['Subrahmanian12:Computational', 'Shakarian12:Adversarial', 'Dickerson10:Graph', 'Subrahmanian09:What'], true)
 
   .col-md-4
-    %img.featurette-image.img-responsive{:src => "data:image/png;base64,", :"data-src" => "holder.js/500x300/auto", :alt => "Counter-terrorism."}
+    %img.featurette-image.img-responsive{:src => "/img/research/drug_lab_locations.png", :alt => "Counter-terrorism image."}
 
 
 %hr.featurette-divider
