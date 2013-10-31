@@ -1,26 +1,36 @@
-.jumbotron
-  %h1 Side Projects
-  %p Academic projects I've led or with which I've been involved.
+.header-jumbo
+  <h1> Side Projects <small> :: Technology meets social science. </small></h1>
   %ul.list-inline
     %li 
-      %a{:href => "#track-it"} Eye Tracking
+      %a{:href => "#track-it"} 
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Eye Tracking
     %li 
-      %a{:href => "#gorillas"} Gorilla Networks
+      %a{:href => "#gorillas"} 
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Gorilla Networks
 
 %hr.featurette-divider
 
 %a{:name => "track-it"}
 .row.featurette
   .col-md-4
-    %img.featurette-image.img-responsive{:src => "data:image/png;base64,", :"data-src" => "holder.js/500x300/auto", :alt => "Eye Tracking."}
-
+    
   .col-md-8
     %h2.featurette-heading
       Eye Tracking.
     %p.lead
       2011&mdash;Present
+.row
+  .col-md-4
+    %img.featurette-image.img-responsive{:src => "/img/side_projects/trackit_trial_nocolor_360.png", :alt => "Screenshot from Track-It"}
+  .col-md-8
     %p
-      xxx
+      A child's environment presents it with a wealth of input that can inform learning; however, not all input is equally informative because some stimuli are preferentially attended to.  How do young learners selectively allocate attention to visual input, and how does this selectivity influence learning?
+    %p
+      In collaboration with psychologists, I am developing Track-It, a modular, open source software suite created specifically to investigate mechanisms of sustained selective attention with young children.  Track-It presents the participant with a grid and a target object moving on the grid along a random trajectory. Participants are asked to visually track the target and identify the grid location last visited by the target before it disappears. The moving target in this task can be accompanied by distracters, also moving along a random trajectory.  Track-It tracks participants' gaze trajectories and can be used to compare trajectories based on a variety of features.
+    %p
+      For more information, visit the official <a href="http://www.psy.cmu.edu/~trackit/">Track-It website</a>.  Clone the <a href="https://github.com/JohnDickerson/TrackIt/">source code</a> from GitHub if you're interested in adding your own features!
     %h4 
       Representative Publications
     = rep_pubs_list(['Fisher13:Development', 'Fisher13:Assessing', 'Thiessen12:Eyes'], true)
@@ -32,16 +42,17 @@
 .row.featurette
   .col-md-8
     %h2.featurette-heading
-      Social Networking.
+      Social Networking (with Gorillas).
     %p.lead
       2011&mdash;Present
     %p
-      xxx
+      Gorilla groups maintain a strict social hierarchy; interactions between gorillas of the same group and gorillas of different groups have enormous effects on group composition and structure.  With the <a href="http://gorillafund.org/">Dian Fossey Gorilla Fund International</a> and the <a href="http://www.umiacs.umd.edu/">University of Maryland</a>, I am investigating how interactions between gorillas propagate through intra- and inter-group social networks induced by gorilla actions, locations, ages, and other features.
+      We are trying to quantify answers to questions about gorilla emigration and the centrality (relative importance) of specific gorillas.
     %h4 Representative Publications
-    %p.text-muted Coming soon!  Papers in preparation.
+    %p.text-muted Coming soon!  Papers are in preparation.
 
   .col-md-4
-    %img.featurette-image.img-responsive{:src => "data:image/png;base64,", :"data-src" => "holder.js/500x300/auto", :alt => "Social Networking."}
+    %img.featurette-image.img-responsive{:src => "/img/side_projects/gorilla_with_infant_blur.jpg", :alt => "Gorilla with infant."}
 
 
 %hr.featurette-divider

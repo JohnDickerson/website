@@ -8,13 +8,13 @@
       %a.navbar-brand{:href => "/"} John P. Dickerson
     .navbar-collapse.collapse
       %ul.nav.navbar-nav
-        %li
-          %a{:href => "/research"} Research
-        %li
+        %li{:class => ('active' if @active == :research)}
+          %a{:href => "/research", } Research
+        %li{:class => ('active' if @active == :publications)}
           %a{:href => "/pubs"} Publications
-        %li
+        %li{:class => ('active' if @active == :industry)}
           %a{:href => "/industry"} Industry
-        %li
+        %li{:class => ('active' if @active == :side_projects)}
           %a{:href => "/side_projects"} Side Projects
         %li
           %a{:href => "/files/dickerson.john.p.cv.pdf"} C.V.

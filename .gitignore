@@ -1,4 +1,10 @@
 
+# LaTeX temp files
+*.aux
+*.log
+*.tex~
+*.bbl
+
 # Emacs
 \#*
 .#*
