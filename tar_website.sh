@@ -6,6 +6,6 @@
 
 backup_path="../website_backup"
 rm -rf ${backup_path}
-httrack "http://127.0.0.1:9292/" -O ${backup_path} +*.* --disable-security-limits --max-rate 25000000
+httrack "http://127.0.0.1:9292/" -O ${backup_path} --disable-security-limits --max-rate 25000000
 tar cvfz ${backup_path}.tgz ${backup_path}
 
