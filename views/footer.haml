@@ -1,7 +1,10 @@
 #footer
   .container
     .top-space.pull-right
-      <a href="http://scholar.google.com/citations?user=QgDpfCQAAAAJ&hl=en"><img src="/img/GScholar.ico" width="32" height="32"></img></a>
-      <a href="https://github.com/JohnDickerson"><img src="/img/GitHub-Mark-32px.png" width="32" height="32"></img></a>    
-      <a href="http://www.linkedin.com/pub/john-dickerson/7/74a/83a"><img width="32" height="32" src="/img/linkedin.png" alt="LinkedIn"></img></a>
+      %a{:href => "http://scholar.google.com/citations?user=QgDpfCQAAAAJ&hl=en"}
+        %img{:src => "/img/GScholar.ico", :width => "32", :height => "32", :alt => "Google Scholar"}    
+      %a{:href => "https://github.com/JohnDickerson"}
+        %img{:src => "/img/GitHub-Mark-32px.png", :width => "32", :height => "32", :alt => "GitHub"}
+      %a{:href => "http://www.linkedin.com/pub/john-dickerson/7/74a/83a"}
+        %img{:src => "/img/linkedin.png", :width => "32", :height => "32", :alt => "LinkedIn"}
     
