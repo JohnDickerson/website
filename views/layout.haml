@@ -9,6 +9,7 @@
     %meta{:name => "description", :content => "Personal website for John P. Dickerson"}
     %meta{:name => "author", :content => "John P. Dickerson"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{:name => "verify-v1", :content => "zm0FOg0MZIAFdxSDdrOmZHk91RNtJ17UWIGQoxnqQMk="}
 
     %link{:href => "/vendor/css/bootstrap-theme-cerulean.min.css", :type => "text/css", :rel => "stylesheet"}
     /%link{:href => "/vendor/css/bootstrap-theme.min.css", :type => "text/css", :rel => "stylesheet"}
@@ -42,4 +43,14 @@
     / When the site's complete, remove this
     %script{:type => "text/javascript", :src => "/js/holder.min.js"}
 
-
+    / Google Analytics for gannon-house.com
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-4353628-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    </script>
+    
