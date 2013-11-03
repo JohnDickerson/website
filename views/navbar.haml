@@ -1,12 +1,13 @@
-.navbar.navbar-inverse.navbar-static-top
+.navbar.navbar-inverse.navbar-static-top{:role => "navigation"}
   .container
     .navbar-header
-      %button.navbar-toggle{:type => "button", :"data-collapse" => "collapse", :"data-target" => ".navbar-collapse"}
+      %button.navbar-toggle{:type => "button", :"data-toggle" => "collapse", :"data-target" => ".navbar-collapse"}
+        %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{:href => "/"} John P. Dickerson
-    .navbar-collapse.collapse
+    %nav.navbar-collapse.collapse
       %ul.nav.navbar-nav
         %li{:class => ('active' if @active == :research)}
           %a{:href => "/research", } Research
