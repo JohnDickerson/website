@@ -1,3 +1,10 @@
+wordcloud
+home
+page
+state
+use
+per
+fisher
 us
 ab
 al
