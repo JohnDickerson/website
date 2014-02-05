@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "rack"
 gem "nokogiri", '~> 1.5.10'
 gem "sinatra"
 gem "haml"
