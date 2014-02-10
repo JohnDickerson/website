@@ -26,10 +26,17 @@ if $bib.nil? or $bib_short.nil?
      obj.replace($short_names.q('@string'))
    end
 
-   $bib_citestyle = :apa   # :mla
+   # Styles that look okay:
+   # :mla
+   # :apa
+   # 'https://github.com/citation-style-language/styles/raw/master/chicago-author-date.csl'
+   # 'https://github.com/citation-style-language/styles/raw/master/acm-sig-proceedings-long-author-list.csl'
+   $bib_citestyle = \
+'https://github.com/citation-style-language/styles/raw/master/acm-sig-proceedings-long-author-list.csl'	
+
    puts "Finished translating .bib to string hash"
 
-else	
+else
    puts "Already loaded .bib files"
 end
 

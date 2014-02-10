@@ -53,3 +53,5 @@ cat ${WORDSt} | grep -w -f ${TOPWORDSt} > ${FINAL}
 rm -f ${ALLh} ${ALLt} ${CLEANt} ${WORDSt} ${FREQSt} ${TOPWORDSt}
 
 # Go to Wordle or wherever and input wordcloud.txt!
+# Also good: http://timc.idv.tw/wordcloud/
+# Raw text: https://raw.github.com/JohnDickerson/website/master/public/pubs/wordcloud/wordcloud.txt

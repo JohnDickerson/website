@@ -18,6 +18,10 @@ helpers do
   # Processes a bibtex entry into a human-readable string, and removes all {s and }s.
   def cite_to_link(bib_struct)
     base = (CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle, :format => :html).delete "{}"
+
+    # MLA style displays "Print." after some entries, and that's dumb.  Remove it 
+    base.chomp!("Print.")
+
     # Can't figure out how to display note field in bibtex, so force it in
     if not bib_struct[:note].nil? then
       base += " " + (bib_struct[:note].delete "{}")
