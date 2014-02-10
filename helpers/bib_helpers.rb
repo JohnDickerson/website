@@ -17,7 +17,12 @@ helpers do
 
   # Processes a bibtex entry into a human-readable string, and removes all {s and }s.
   def cite_to_link(bib_struct)
-    (CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle).delete "{}"
+    base = (CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle, :format => :html).delete "{}"
+    # Can't figure out how to display note field in bibtex, so force it in
+    if not bib_struct[:note].nil? then
+      base += " " + (bib_struct[:note].delete "{}")
+    end
+    return base
   end
 
   # Translate a bib_key that looks like "NameYear:Title" into a URL
