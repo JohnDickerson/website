@@ -5,6 +5,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+.text-right{text-align: right;}
+.text-left{text-align: left;}
 
 .top-space{margin-top:10px;}
 .index-hero{}
@@ -46,4 +48,11 @@
 .list-inline > li {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.nopad {
+    padding:0px;
+}
+.nomarg {
+    margin:0px;
 }

@@ -1,11 +1,9 @@
 .row.featurette
-  - if parity == :right
-    .col-md-4
-  .col-md-8
-    %a{:name => "#{aname}"}
-    %h2= header
-    - pub_map.sort.reverse.map do |year, pub_keys|
-      %h3= year
+  %a{:name => "#{aname}"}
+  %h2= header
+- pub_map.sort.reverse.map do |year, pub_keys|
+  .row  
+    .col-md-2.text-right
+      %h3.nopad.nomarg= year
+    .col-md-9
       = rep_pubs_list(pub_keys, include_links)
-  - if parity == :left
-    .col-md-4
