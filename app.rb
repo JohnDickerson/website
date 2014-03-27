@@ -43,6 +43,13 @@ get '/side_projects/?' do
   haml :side_projects
 end
 
+# Service (academic, otherwise)
+get '/service/?' do
+  @subtitle = "Service"
+  @active = :service
+  haml :service
+end
+
 # Home page (links to all the other main pages)
 get '/' do
   haml :index
