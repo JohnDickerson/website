@@ -24,6 +24,8 @@
   .col-md-8
     %h2.featurette-heading
       Awards
-    %p
-      xxx
+    %ul.list-unstyled
+      - [{:name => "NDSEG Fellowship", :desc => "Full tuition, fees, & stipend for 3 years", :usd => 218410}, {:name => "NSF SBIR Phase I", :desc => "Principal Investigator, Award #1345567", :usd => 150000}, {:name => "Travel Funds", :desc => "AAAI, SoCS, AAMAS", :usd => 3090}].each do |award|
+        %li.glyphicon.glyphicon-chevron-right
+          = award[:name]
 
