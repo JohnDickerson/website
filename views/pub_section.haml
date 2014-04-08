@@ -1,9 +1,35 @@
 .row.featurette
   %a{:name => "#{aname}"}
   %h2= header
-- pub_map.sort.reverse.map do |year, pub_keys|
-  .row  
-    .col-md-2.text-right
-      %h3.nopad.nomarg= year
-    .col-md-9
-      = rep_pubs_list(pub_keys, include_links)
+
+  %table.table
+    %thead
+      %tr
+        %th.col-md-2 Authors
+        %th Title
+        %th.col-md-1 Year
+        %th.col-md-2 Venue      
+    %tbody
+      - pub_map.sort.reverse.map do |year, pub_keys|    
+        - pub_keys.map do |pub_key|
+          - entry = get_bib_entry(pub_key)
+          %tr
+            %td
+              = entry[:authors]
+            %td
+              %strong
+                = entry[:title]
+              - if include_links                
+                = " (#{entry[:pdflink]})"
+            %td
+              = entry[:year]
+            %td
+              = entry[:venue]
+            
+/
+  - pub_map.sort.reverse.map do |year, pub_keys|
+    .row  
+      .col-md-2.text-right
+        %h3.nopad.nomarg= year
+      .col-md-9
+        = rep_pubs_list(pub_keys, include_links)
