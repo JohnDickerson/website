@@ -46,7 +46,7 @@ GEM
       dm-core (~> 1.2.0)
     do_sqlite3 (0.10.14)
       data_objects (= 0.10.14)
-    execjs (2.0.2)
+    execjs (2.2.0)
     fastercsv (1.5.5)
     haml (4.0.5)
       tilt
@@ -57,21 +57,21 @@ GEM
     logging (1.8.2)
       little-plugger (>= 1.1.3)
       multi_json (>= 1.8.4)
-    multi_json (1.9.2)
+    multi_json (1.10.1)
     nokogiri (1.5.11)
     rack (1.5.2)
-    rack-protection (1.5.2)
+    rack-protection (1.5.3)
       rack
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (1.4.4)
+    sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
     sqlite3 (1.3.9)
     stringex (1.5.1)
     tilt (1.4.1)
-    uglifier (2.5.0)
+    uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicode (0.4.4.1)
@@ -95,7 +95,7 @@ DEPENDENCIES
   dm-validations (>= 1.0)
   haml
   json
-  nokogiri (~> 1.5.10)
+  nokogiri (>= 1.5.10)
   rack
   shotgun
   sinatra
