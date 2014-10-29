@@ -34,7 +34,11 @@ helpers do
     bib_hash[:venue].delete! "{}"
 
     # Absolute filepath to pdf link (MAY NOT EXIST, check elsewhere)
-    bib_hash[:pdflink] = "<a href=\"/pubs/#{bib_key_to_link(bib_key)}.pdf\">pdf</a>"
+    bibkey_link = bib_key_to_link(bib_key)
+    bib_hash[:pdflink] = "<a id=\"#{bibkey_link}\" href=\"/pubs/#{bibkey_link}.pdf\">pdf</a>"
+
+    # Google Analytics click tracking
+    bib_hash[:ga_track] = "<script type='text/javascript'>" + ga_event_tracking(bibkey_link, "/pubs/#{bibkey_link}.pdf") + "</script>"
     return bib_hash
   end
 
@@ -42,16 +46,30 @@ helpers do
   # Takes an array of string keys into a .bib file and returns an HTML
   # list of their citations, formatted via cite_to_link
   def rep_pubs_list(bib_keys, include_links=false)
-    out = "<ul class='list-unstyled'>"
     
+    bibkey_links = Array.new
+    out = "<ul class='list-unstyled'>"
     out += bib_keys.uniq.map do |bib_key| 
+      bibkey_link = bib_key_to_link(bib_key)
+      bibkey_links << bibkey_link   # track links for GA code later
       "<li><span class='glyphicon glyphicon-chevron-right'></span>
 #{cite_to_link($bib[bib_key])} " +
-        ((include_links == true) ? "[<a href=\"/pubs/#{bib_key_to_link(bib_key)}.pdf\">link</a>]" : "") + 
+        ((include_links == true) ? "[<a id=\"#{bibkey_link}\" href=\"/pubs/#{bibkey_link}.pdf\">link</a>]" : "") + 
         "</li>"
     end.join
-    
-    out += "</ul>"
+    out += "</ul>\n"
+
+    # Include Google Analytics click tracking
+    out += "<script type='text/javascript'>"
+    bibkey_links.each{ |bibkey_link|
+      out += ga_event_tracking(bibkey_link, "/pubs/#{bibkey_link}.pdf") + "\n"
+    }
+    out += "</script>"
+  end
+
+  # Google Analytics event tracking via JQuery
+  def ga_event_tracking(element_name, desc)
+    return "$('\##{element_name}').on('click', function() {ga('send', 'event', 'button', 'click', '#{desc}');});"
   end
 
   # Processes a bibtex entry into a human-readable string, and removes all {s and }s.

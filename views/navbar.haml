@@ -21,5 +21,6 @@
           %li{:class => ('active' if @active == :service)}
             %a{:href =>"/service"} Service &amp; Awards
         %li
-          %a{:href => "/files/dickerson.john.p.cv.pdf"} C.V.
+          %a{:id => "cv", :href => "/files/dickerson.john.p.cv.pdf"}
+            = "C.V. <script type='text/javascript'>#{ga_event_tracking('cv', 'cv.pdf')}</script>"
     
