@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem "rack"
 gem "nokogiri", '>= 1.5.10'
