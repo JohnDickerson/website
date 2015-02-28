@@ -1,10 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% John P. Dickerson -- Last Update: January 2015
+%% John P. Dickerson -- Last Update: Feb 2015
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Stores short conference/journal names; matches with longer names in main bib
+%% prevent dashes for consecutive same-authors publications
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+  CTLdash_repeated_names = "no"
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% conference/workshop venues
@@ -20,6 +23,8 @@
 @String{IAAIConf = "Conference on Innovative Applications of Artificial Intelligence (IAAI)"}
 @String{ICCCDConf = "International Conference on Computational Cultural Dynamics"}
 @String{INFORMS = "INFORMS Annual Conference"}
+@String{INFORMSHC = "INFORMS Healthcare Conference"}
+@String{ISMP = "International Symposium on Mathematical Programming (ISMP)"}
 @String{JISICConf = "Joint Intelligence \& Security Informatics Conference (JISIC)"}
 @String{KDDConf = "International Conference on Knowledge Discovery and Data Mining (KDD)"}
 @String{OSINTConf = "International Symposium on Open Source Intelligence and Web Mining"}
