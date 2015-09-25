@@ -19,6 +19,10 @@
         %span.glyphicon.glyphicon-circle-arrow-down
         Book Chapters
     %li
+      %a{:href => "#thesis"}
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Thesis      
+    %li
       %a{:href => "#invited"}
         %span.glyphicon.glyphicon-circle-arrow-down
         Invited Talks
@@ -81,6 +85,16 @@
 :include_links => true, |
 :pub_map => {"2013" => ['Dickerson13:Using', 'Simari13:Policy'], |
   "2012" => ['Subrahmanian12:Computational', 'Shakarian12:Geospatial'], |
+}}) |
+
+%hr.featurette-divider
+
+= render(:haml,:'pub_section',:locals => { |
+:aname => "thesis", |
+:parity => :left, |
+:header => "Thesis", |
+:include_links => true, |
+:pub_map => {"2015" => ['Dickerson15:Unified'], |
 }}) |
 
 %hr.featurette-divider
