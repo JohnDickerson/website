@@ -35,6 +35,7 @@ helpers do
 
     # Absolute filepath to pdf link (MAY NOT EXIST, check elsewhere)
     bibkey_link = bib_key_to_link(bib_key)
+    bib_hash[:pdfpath] = "/pubs/#{bibkey_link}.pdf"
     bib_hash[:pdflink] = "<a id=\"#{bibkey_link}\" href=\"/pubs/#{bibkey_link}.pdf\">pdf</a>"
 
     # Google Analytics click tracking

@@ -18,8 +18,8 @@
               = entry[:authors]
             %td
               %strong
-                = entry[:title]
-              - if include_links                
+                = entry[:title]                
+              - if include_links and File.exists?(File.join(settings.public_folder,"#{entry[:pdfpath]}"))               
                 = " (#{entry[:pdflink]}) #{entry[:ga_track]}"
             %td
               = entry[:year]
