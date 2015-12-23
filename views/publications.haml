@@ -17,7 +17,11 @@
     %li 
       %a{:href => "#chapters"}
         %span.glyphicon.glyphicon-circle-arrow-down
-        Book Chapters
+        Chapters
+    %li
+      %a{:href => "#tutorials"}
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Tutorials
     %li
       %a{:href => "#thesis"}
         %span.glyphicon.glyphicon-circle-arrow-down
@@ -86,6 +90,16 @@
 :include_links => true, |
 :pub_map => {"2013" => ['Dickerson13:Using', 'Simari13:Policy'], |
   "2012" => ['Subrahmanian12:Computational', 'Shakarian12:Geospatial'], |
+}}) |
+
+%hr.featurette-divider
+
+= render(:haml,:'pub_section',:locals => { |
+:aname => "tutorials", |
+:parity => :left, |
+:header => "Invited &amp; refereed tutorials", |
+:include_links => true, |
+:pub_map => {"2016" => ['Dickerson16:OrganTutorial'], |
 }}) |
 
 %hr.featurette-divider
