@@ -22,7 +22,10 @@
               - if include_links and File.exists?(File.join(settings.public_folder,"#{entry[:pdfpath]}"))               
                 = " (#{entry[:pdflink]}) #{entry[:ga_track]}"
             %td
-              = entry[:year]
+              - if year == 'Working'
+                = "&mdash;"
+              - else
+                = entry[:year]
             %td
               = entry[:venue]
             
