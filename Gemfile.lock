@@ -102,6 +102,3 @@ DEPENDENCIES
   sqlite3
   uglifier
   watchr
-
-BUNDLED WITH
-   1.13.6
