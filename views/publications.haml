@@ -3,6 +3,10 @@
   
   %ul.list-inline
     %li 
+      %a{:href => "#working"} 
+        %span.glyphicon.glyphicon-circle-arrow-down
+        Drafts
+    %li 
       %a{:href => "#conference"} 
         %span.glyphicon.glyphicon-circle-arrow-down
         Conference
@@ -39,12 +43,23 @@
 %hr.featurette-divider
 
 = render(:haml,:'pub_section',:locals => { |
+:aname => "working", |
+:parity => :left, |
+:header => "Working papers", |
+:include_links => true, |
+:pub_map => { |
+  "Working" => ['Curry19:Mix','Dickerson19:Online','Durvasula19:Bayesian','McElfresh19:Ethics','Plaut16:Hardness','Rosemarin17:Learning','Schumann17:Diverse','Schumann19:Making'], |
+}}) |
+
+%hr.featurette-divider
+
+= render(:haml,:'pub_section',:locals => { |
 :aname => "conference", |
 :parity => :left, |
 :header => "Conference papers", |
 :include_links => true, |
 :pub_map => { |
-  "Working" => ['Schumann17:Diverse','Rosemarin17:Learning','Plaut16:Hardness'], |
+  "2019" => ['McElfresh19:Scalable','Dickerson19:Balancing','Xu19:Unified'], |
   "2018" => ['McElfresh18:Balancing','Freedman18:Adapting','Dickerson18:Allocation','Li18:Equilibrium','Dickerson18:Assigning','Redmiles18:Dancing'], |
   "2017" => ['Dickerson17:Small','Farina17:Operation','Ahmed17:Diverse'], |
   "2016" => ['Plaut16:Fast', 'Dickerson16:Position'], |
@@ -107,7 +122,9 @@
 :parity => :left, |
 :header => "Invited &amp; refereed tutorials", |
 :include_links => true, |
-:pub_map => {"2016" => ['Dickerson16:OrganTutorial'], |
+:pub_map => { |
+  "2016" => ['Dickerson16:OrganTutorial'], |
+  "2018" => ['Dickerson18:EthicalCMMRS'], |
 }}) |
 
 %hr.featurette-divider
@@ -117,7 +134,9 @@
 :parity => :left, |
 :header => "Thesis", |
 :include_links => true, |
-:pub_map => {"2016" => ['Dickerson16:Unified'], "2015" => ['Dickerson15:Unified'], |
+:pub_map => { |
+  "2016" => ['Dickerson16:Unified'], |
+  "2015" => ['Dickerson15:Unified'], |
 }}) |
 
 %hr.featurette-divider
@@ -128,7 +147,7 @@
 :header => "Invited talks", |
 :include_links => false, |
 :pub_map => { |
-  "2019" => ['Dickerson18:DiversityCMU'], |
+  "2018" => ['Dickerson18:IntroductionFTC','Dickerson18:DiversityCMU','Dickerson18:UsingAmerican','Dickerson18:UsingDartmouth','Dickerson18:IncreasingFacebook','Dickerson18:BetterGoogle','Dickerson18:DiversityIBM','Dickerson18:DiversityFacebook'], |
   "2017" => ['Dickerson17:BetterStanford','Dickerson17:BetterUBC','Dickerson17:BetterLTS','Dickerson17:RecentINFORMSHC','Dickerson17:BetterUSNA'], |
   "2016" => ['Dickerson16:SmallINFORMS', 'Dickerson16:SmallEURO', 'Dickerson16:UncertaintyINFORMS', 'Dickerson16:BetterDuke', 'Dickerson16:TowardINFORMS', 'Dickerson16:PositionINFORMS', 'Dickerson16:Swapping'], |
   "2015" => ['Dickerson15:NearINFORMS', 'Dickerson15:DynamicsPOMS','Dickerson15:CombiningISMP','Dickerson15:CombiningINFORMSHC','Dickerson15:KidneyCMU'], |
@@ -145,6 +164,7 @@
 :header => "Other publications and presentations", |
 :include_links => false, |
 :pub_map => { |
+  "2018" => ['Redmiles18:Do','Redmiles18:Equitable'], |
   "2017" => ['Sandholm17:Novel'], |
   "2016" => ['Dickerson16:FastIOS', 'Dickerson16:FutureMatchGAMES'], |
   "2015" => ['Erickson15:Different'], |
