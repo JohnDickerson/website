@@ -4,6 +4,10 @@
 # the publications directory.  Adapted from:
 # http://skipperkongen.dk/2011/09/07/creating-a-word-cloud-from-pdf-documents/
 
+# Switches to an environment where 'tr' and 'grep' accept byte sequences
+# instead of text
+export LC_CTYPE=C
+
 # The final wordcloud text will be stored here
 FINAL=wordcloud.txt
 
