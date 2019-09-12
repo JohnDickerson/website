@@ -3,10 +3,6 @@
   
   %ul.list-inline
     %li 
-      %a{:href => "#working"} 
-        %span.glyphicon.glyphicon-circle-arrow-down
-        Drafts
-    %li 
       %a{:href => "#conference"} 
         %span.glyphicon.glyphicon-circle-arrow-down
         Conference
@@ -42,14 +38,16 @@
 
 %hr.featurette-divider
 
-= render(:haml,:'pub_section',:locals => { |
-:aname => "working", |
-:parity => :left, |
-:header => "Working papers", |
-:include_links => true, |
-:pub_map => { |
-"Working" => ['Ahmadi19:Algorithms','Durvasula19:Bayesian','McElfresh19:Ethics','Plaut16:Hardness','Rosemarin17:Learning','Brubach19:Pairwise','Brubach19:General','Schumann19:Group','Shafahi19:Universal'], |
-}}) |
+<p>For working papers, please email me at <code>john@cs.umd.edu</code> or check out <a href="https://arxiv.org/search/?searchtype=author&query=Dickerson%2C+J+P">arXiv</a> for public drafts.</p>
+
+/= render(:haml,:'pub_section',:locals => { |
+/:aname => "working", |
+/:parity => :left, |
+/:header => "Working papers", |
+/:include_links => true, |
+/:pub_map => { |
+/"Working" => ['Ahmadi19:Algorithms','Durvasula19:Bayesian','McElfresh19:Ethics','Plaut16:Hardness','Rosemarin17:Learning','Brubach19:Pairwise','Brubach19:General','Schumann19:Group','Shafahi19:Universal'], |
+/}}) |
 
 %hr.featurette-divider
 
