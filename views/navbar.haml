@@ -9,14 +9,17 @@
       %a.navbar-brand{:href => "/"} John P. Dickerson
     %nav.navbar-collapse.collapse
       %ul.nav.navbar-nav
-        %li{:class => ('active' if @active == :research)}
-          %a{:href => "/research", } Research
+        /
+          %li{:class => ('active' if @active == :research)}
+            %a{:href => "/research", } Research
         %li{:class => ('active' if @active == :publications)}
           %a{:href => "/pubs"} Publications
-        %li{:class => ('active' if @active == :industry)}
-          %a{:href => "/industry"} Industry
-        %li{:class => ('active' if @active == :side_projects)}
-          %a{:href => "/side_projects"} Side Projects
+        /
+          %li{:class => ('active' if @active == :industry)}
+            %a{:href => "/industry"} Industry
+        /
+          %li{:class => ('active' if @active == :side_projects)}
+            %a{:href => "/side_projects"} Side Projects
         /
           %li{:class => ('active' if @active == :service)}
             %a{:href =>"/service"} Service &amp; Awards
