@@ -38,6 +38,7 @@
 @String{RLDM = "Conference on Reinforcement Learning and Decision Making (RLDM)"}
 @String{SoCSConf = "International Symposium on Combinatorial Search (SoCS)"}
 @String{SUMConf = "International Conference on Scalable Uncertainty Management (SUM)"}
+@String{UAI = "Conference on Uncertainty in Artificial Intelligence (UAI)"}
 @String{WTC = "World Transplant Congress (WTC)"}
 @String{NDSS = "Network and Distributed System Security Symposium (NDSS)"}
 @String{NeurIPS = "Conference on Neural Information Processing Systems (NeurIPS)"}
@@ -50,20 +51,13 @@
 @String{ACMTIST = "ACM Transactions on Intelligent Systems and Technology (TIST)"}
 @String{ACMTOCL = "ACM Transactions on Computational Logic (TOCL)"}
 @String{ASMEJCISE = "ASME Journal of Computing and Information Science in Engineering (JCISE)"}
+@String{JMD = "Journal of Mechanical Design (JMD)"}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% bibliography starts here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@article{Ahmadi19:Algorithms,
-title={Algorithms for Optimal Diverse Matching},
-author={Ahmadi, Saba and Ahmed, Faez and Dickerson, John P. and Fuge, Mark and Khuller, Samir},
-year=2019,
-journal={CoRR},
-volume={abs/1909.03350},
-note={Working paper.},
-}
 
 @article{Brubach19:General,
 title={A General Framework for Pairwise Constrained, Radius-Based Clustering},
@@ -124,6 +118,44 @@ note={Working paper.},
 %% Year 2020 %%
 %%%%%%%%%%%%%%%
 
+@article{Ahmed20:Forming,
+  title={Forming Diverse Teams from Sequentially Arriving People},
+  author={Ahmed, Faez and Dickerson, John P. and Fuge, Mark},
+  year=2020,
+  journal=JMD,
+  note={To appear.},
+}
+  
+@conference{McElfresh20:Matching,
+  title={Matching Algorithms for Blood Donation},
+  author={McElfresh, Duncan C. and Kroer, Christian and Pupyrev, Sergey and Sodomka, Eric and Dexter, Neil and Sankararaman, Karthik Abinav and Chauvin, Zack and Dickerson, John P.},
+  year=2020,
+  booktitle=ECConf,
+}
+
+@conference{Bidkhori20:Kidney,
+title={Kidney Exchange with Inhomogeneous Edge Existence Uncertainty},
+author={Bidkhori, Hoda and Dickerson, John P. and McElfresh, Duncan C. and Ren, Ke},
+year=2020,
+booktitle=UAI,
+}
+
+@conference{Ahmadi20:Algorithm,
+title={An Algorithm for Multi-Attribute Diverse Matching},
+author={Ahmadi, Saba and Ahmed, Faez and Dickerson, John P. and Fuge, Mark and Khuller, Samir},
+year=2020,
+booktitle=IJCAIConf,
+}
+
+@conference{Schumann20:Need,
+title={We Need Fairness and Explainability in Algorithmic Hiring},
+author={Schumann, Candice and Foster, Jeffrey S. and Mattei, Nicholas and Dickerson, John P.},
+year=2020,
+booktitle=AAMASConf,
+note={Blue Sky Track.},
+}
+
+
 @conference{Chan20:ArtificialAIES,
 title={Artificial Artificial Intelligence: Measuring Influence of {AI} ``Assessments'' on Moral Decision-Making},
 author={Chan, Lok and Doyle, Kenzie and McElfresh, Duncan C. and Conitzer, Vincent and Dickerson, John P. and Schaich Borg, Jana and Sinnott-Armstrong, Walter},
@@ -136,6 +168,7 @@ title={Human Comprehension of Fairness in Machine Learning},
 author={Saha, Debjani and Schumann, Candice and McElfresh, Duncan C. and Dickerson, John P. and Mazurek, Michelle L and Tschantz, Michael Carl},
 year=2020,
 booktitle=AIESConf,
+note={Abstract-only publication.},
 }
 
 @conference{Nanda20:BalancingAIES,
@@ -178,13 +211,23 @@ booktitle=AAAIConf,
 title={Adapting a Kidney Exchange Algorithm to Align with Human Values},
 author={Freedman, Rachel and Schaich Borg, Jana and Sinnott-Armstrong, Walter and Dickerson, John P. and Conitzer, Vincent},
 year=2020,
+volume=283,
+pages={103261},
 journal=AIJ,
-note={To appear.},
 }
 
-@misc{Das20:OptimizationAAAI,
+@misc{Ahmed20:OptimizationIJCAI,
   title={Optimization \& Learning Approaches to Resource Allocation for Social Good},
-  author={Das, Sanmay and Dickerson, John P. and McElfresh, Duncan and Wilder, Bryan},
+  author={Ahmed, Faez and Das, Sanmay and Dickerson, John P. and McElfresh, Duncan and Wilder, Bryan},
+  year=2020,
+  month=2,
+  day=7,
+  note={Half-day tutorial at the } # IJCAIConf,
+}
+
+@misc{Ahmed20:OptimizationAAAI,
+  title={Optimization \& Learning Approaches to Resource Allocation for Social Good},
+  author={Ahmed, Faez and Das, Sanmay and Dickerson, John P. and McElfresh, Duncan and Wilder, Bryan},
   year=2020,
   month=2,
   day=7,
@@ -378,12 +421,14 @@ booktitle=AAMASConf,
   note={Half-day tutorial at the } # AAMASConf,
 }
 
-@article{Blum19:Ignorance,
+@article{Blum20:Ignorance,
 title={Ignorance is Almost Bliss: Near-Optimal Stochastic Matching With Few Queries},
 author={Blum, Avrim and Dickerson, John P. and Haghtalab, Nika and Procaccia, Ariel D. and Sandholm, Tuomas and Sharma, Ankit},
 journal={Operations Research},
-year=2019,
-note={To appear.},
+year=2020,
+volume=68,
+number=1,
+pages={16--34},
 }
 
 @conference{McElfresh19:Scalable,
@@ -533,10 +578,10 @@ year=2018,
 booktitle=IJCAIConf,
 }
 
-@article{Dickerson18:FailureMS,
+@article{Dickerson19:FailureMS,
 title={Failure-Aware Kidney Exchange},
 author={Dickerson, John P. and Procaccia, Ariel D. and Sandholm, Tuomas},
-year=2018,
+year=2019,
 journal={Management Science},
 volume={65},
 number={4},
