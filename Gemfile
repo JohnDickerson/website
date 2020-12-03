@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
 gem "rack"
-gem "nokogiri", '>= 1.5.10'
+gem "nokogiri", '>= 1.10.8'
+gem "execjs"
 gem "sinatra"
-gem "haml"
+gem "haml", '>= 5.0.0'
 gem "shotgun"
 gem "json"
 gem "watchr"
