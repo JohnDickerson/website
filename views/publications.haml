@@ -25,16 +25,7 @@
     %li
       %a{:href => "#thesis"}
         %span.glyphicon.glyphicon-circle-arrow-down
-        Thesis      
-    %li
-      %a{:href => "#invited"}
-        %span.glyphicon.glyphicon-circle-arrow-down
-        Invited Talks
-    %li
-      %a{:href => "#other"} 
-        %span.glyphicon.glyphicon-circle-arrow-down
-        Other
-
+        Thesis
 
 %hr.featurette-divider
 
@@ -57,7 +48,7 @@
 :header => "Conference papers", |
 :include_links => true, |
 :pub_map => { |
-  "2021" => ['Nanda21:Fairness','Brubach21:Fairness','Aziz21:Optimal','McElfresh21:Indecision','Christia21:Scalable'], |
+  "2021" => ['Nanda21:Fairness','Cherepanova21:LowKey','Raman21:Data-Driven','Brubach21:Fairness','Aziz21:Optimal','McElfresh21:Indecision','Christia21:Scalable'], |
   "2020" => ['McElfresh20:Matching','Chiang20:Detection','Curry20:Certifying','Esmaeili20:Probabilistic','McElfresh20:Improving','Brubach20:Pairwise','Saha20:Measuring','Bidkhori20:Kidney','Ahmadi20:Algorithm','Shafahi20:Universal','Nanda20:Balancing','Chan20:ArtificialAIES'], |
   "2019" => ['Curry19:Mix','Schumann19:Making','Shafahi19:Adversarial','McElfresh19:Scalable','Dickerson19:Balancing','Xu19:Unified','Schumann19:Diverse','Dickerson19:Online','Shafahi19:Logit-Similarity'], |
   "2018" => ['McElfresh18:Balancing','Freedman18:Adapting','Dickerson18:Allocation','Li18:Equilibrium','Dickerson18:Assigning','Redmiles18:Dancing'], |
@@ -97,7 +88,7 @@
 :header => "Workshop, smaller conference, &amp; earlier-stage papers", |
 :include_links => true, |
 :pub_map => { |
-  "2021" => ['Verma21:Generating'], |
+  "2021" => ['Verma21:Generating','Verma21:CounterfactualHCXAI','Nanda21:LearningHCXAI','Durvasula21:BayesianAIPH'], |
   "2020" => ['Zhao20:Clearing','Nanda20:BalancingAIES','McElfresh20:Can','Saha20:HumanAIES','Raman20:Data-Driven','Curry20:CertifyingWS','Verma20:Counterfactual'], |
   "2019" => ['Curry19:Reinforcement','McElfresh19:MatchingIJCAI','McElfresh19:MatchingMD4SG','Schumann19:GroupWorkshop',], |
   "2018" => ['Cui18:Muffin','McElfresh18:BalancingW3PHI'], |
@@ -131,6 +122,7 @@
 :header => "Invited &amp; refereed tutorials", |
 :include_links => true, |
 :pub_map => { |
+  "2021" => ['Dickerson21:Publishing'], |
   "2020" => ['Ahmed20:OptimizationAAAI'], |
   "2019" => ['Das19:OptimizationAAMAS','Dickerson19:SomeCED'], |
   "2016" => ['Dickerson16:OrganTutorial'], |
@@ -151,39 +143,3 @@
 
 %hr.featurette-divider
 
-= render(:haml,:'pub_section',:locals => { |
-:aname => "invited", |
-:parity => :left, |
-:header => "Invited talks", |
-:include_links => false, |
-:pub_map => { |
-  "2019" => ['Dickerson19:DiversityNSF','Dickerson19:BalancingGoogle','Dickerson19:IncreasingGlasgow','Dickerson19:AINIST','Dickerson19:DiverseSimons','Dickerson19:MatchingSimons','Dickerson19:MarketNITRD','Dickerson19:MatchingFannie',], |
-  "2018" => ['Dickerson18:IntroductionFTC','Dickerson18:DiversityCMU','Dickerson18:UsingAmerican','Dickerson18:UsingDartmouth','Dickerson18:IncreasingFacebook','Dickerson18:BetterGoogle','Dickerson18:DiversityIBM','Dickerson18:DiversityFacebook'], |
-  "2017" => ['Dickerson17:BetterStanford','Dickerson17:BetterUBC','Dickerson17:BetterLTS','Dickerson17:RecentINFORMSHC','Dickerson17:BetterUSNA'], |
-  "2016" => ['Dickerson16:SmallINFORMS', 'Dickerson16:SmallEURO', 'Dickerson16:UncertaintyINFORMS', 'Dickerson16:BetterDuke', 'Dickerson16:TowardINFORMS', 'Dickerson16:PositionINFORMS', 'Dickerson16:Swapping'], |
-  "2015" => ['Dickerson15:NearINFORMS', 'Dickerson15:DynamicsPOMS','Dickerson15:CombiningISMP','Dickerson15:CombiningINFORMSHC','Dickerson15:KidneyCMU'], |
-  "2014" => ['Dickerson14:FutureINFORMS', 'Dickerson14:FutureDBSeminar'], |
-  "2013" => ['Dickerson13:FailureTsinghua', 'Dickerson13:FailureINFORMS', 'Dickerson13:KidneyCMU'], |
-  "2012" => ['Dickerson12:DynamicINFORMS', 'Dickerson12:OptimizingINFORMS'], |
-}}) |
-
-%hr.featurette-divider
-
-= render(:haml,:'pub_section',:locals => { |
-:aname => "other", |
-:parity => :left, |
-:header => "Other publications and presentations", |
-:include_links => false, |
-:pub_map => { |
-  "2018" => ['Redmiles18:Do','Redmiles18:Equitable'], |
-  "2017" => ['Sandholm17:Novel'], |
-  "2016" => ['Dickerson16:FastIOS', 'Dickerson16:FutureMatchGAMES'], |
-  "2015" => ['Erickson15:Different'], |
-  "2014" => ['Dickerson14:TowardWTC', 'Dickerson14:PriceWTC', 'Dickerson14:FutureMatchWTC'], |
-  "2013" => ['Fisher13:Development', 'Dickerson13:LiverINFORMS', 'Dickerson13:LiverATC', 'Dickerson13:FailureATC', 'Dickerson13:OptimizingATC'], |
-  "2012" => ['Thiessen12:Eyes'], |
-  "2009" => ['Vargas-Baron09:Country'], |
-  "2008" => ['Blusewicz08:Classification'], |
-  }}) |
-
-%hr.featurette-divider
