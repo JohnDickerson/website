@@ -37,6 +37,13 @@ get '/industry/?' do
 end
 
 # Lists side projects (similar to research page)
+get '/lab/?' do
+  @subtitle = "Dickerson Lab"
+  @active = :lab
+  haml :lab
+end
+
+# Lists side projects (similar to research page)
 get '/side_projects/?' do
   @subtitle = "Side Projects"
   @active = :side_projects
