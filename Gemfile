@@ -10,7 +10,7 @@ gem "json"
 gem "watchr"
 gem "uglifier"
 gem "sqlite3"
-gem "bibtex-ruby","<3.0"  # >=3.0 breaks on Ruby 1.8
+gem "bibtex-ruby","<6.0" # >=3.0 breaks on Ruby 1.8
 gem "citeproc-ruby","<1.0"  # >=1.0 breaks on Ruby <1.9.3
 
 gem "dm-core",">=1.0"
