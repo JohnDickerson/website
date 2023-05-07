@@ -1,12 +1,13 @@
 require 'sinatra'
 require 'rubygems'
+require_relative 'helpers/bib_helpers.rb'
 
 configure do
 
 end
 
 before do
-  # Have to explicitly activative the navbar links
+  # Have to explicitly activate the navbar links
   @active = :none
 end
 
