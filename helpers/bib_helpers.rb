@@ -1,3 +1,6 @@
+require 'citeproc'
+require 'csl/styles'
+
 helpers do
 
   def get_bib_entry(bib_key)
@@ -54,7 +57,7 @@ helpers do
       bibkey_link = bib_key_to_link(bib_key)
       bibkey_links << bibkey_link   # track links for GA code later
       "<li><span class='glyphicon glyphicon-chevron-right'></span>
-#{cite_to_link($bib[bib_key])} " +
+#{cite_to_link(bib_key, $bib[bib_key])} " +
         ((include_links == true) ? "[<a id=\"#{bibkey_link}\" href=\"/pubs/#{bibkey_link}.pdf\">link</a>]" : "") + 
         "</li>"
     end.join
@@ -74,8 +77,16 @@ helpers do
   end
 
   # Processes a bibtex entry into a human-readable string, and removes all {s and }s.
-  def cite_to_link(bib_struct)
-    base = (CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle, :format => :html).delete "{}"
+  def cite_to_link(bib_key, bib_struct)
+    #cp = CiteProc::Processor.new style: 'apa', format: 'html'
+    #cp.import bib_struct.to_citeproc
+    #base = (CiteProc.process bib_struct.to_citeproc, :style => $bib_citestyle, :format => :html).delete "{}"
+    #print "xyz: ", (CiteProc.process bib_struct.to_citeproc, :style => 'apa')
+    #base = CiteProc.process bib_struct.to_citeproc, :style => 'apa'#, :format => :html
+    base = bib_struct.to_citeproc
+
+    print "base: ", base
+    #base.delete "{}"
 
     # MLA style displays "Print." after some entries, and that's dumb.  Remove it 
     base.chomp!("Print.")
@@ -84,6 +95,8 @@ helpers do
     if not bib_struct[:note].nil? then
       base += " " + (bib_struct[:note].delete "{}")
     end
+    base.delete "{}"
+
     return base
   end
 

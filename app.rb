@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'rubygems'
-require_relative 'helpers/bib_helpers.rb'
+require 'citeproc'
+#require_relative 'helpers/bib_helpers.rb'
 
 configure do
 
@@ -59,6 +60,6 @@ get '/service/?' do
 end
 
 # Home page (links to all the other main pages)
-get '/' do
+get '/', :provides => :html do
   haml :index
 end

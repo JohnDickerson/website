@@ -29,20 +29,11 @@
 
 %hr.featurette-divider
 
-<p>For working papers, please email me at <code>john@cs.umd.edu</code> or check out <a href="https://arxiv.org/search/?searchtype=author&query=Dickerson%2C+J+P">arXiv</a> for public drafts.</p>
-
-/= render(:haml,:'pub_section',:locals => { |
-/:aname => "working", |
-/:parity => :left, |
-/:header => "Working papers", |
-/:include_links => true, |
-/:pub_map => { |
-/"Working" => ['Durvasula19:Bayesian','McElfresh19:Ethics','Plaut16:Hardness','Rosemarin17:Learning','Brubach19:Pairwise','Brubach19:General'], |
-/}}) |
+<p>For working papers, please email me at <code>johnd@umd.edu</code> or check out <a href="https://arxiv.org/search/?searchtype=author&query=Dickerson%2C+J+P">arXiv</a> for public drafts.</p>
 
 %hr.featurette-divider
 
-= render(:haml,:'pub_section',:locals => { |
+= haml(:'pub_section',:escape_html => false, :locals => { |
 :aname => "conference", |
 :parity => :left, |
 :header => "Conference papers", |
@@ -61,7 +52,7 @@
   "2013" => ['Dickerson13:Failure', 'Dickerson13:PREVE'], |
   "2012" => ['Dickerson12:Dynamic', 'Dickerson12:Optimizing'], |
   "2010" => ['Dickerson10:Graph', 'Simari10:Cost-based'], |
-}}) |
+}})
 
 %hr.featurette-divider
 

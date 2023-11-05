@@ -11,9 +11,10 @@ gem "json",">=2.6.3"
 gem "uglifier"
 gem "sqlite3"
 #gem "bibtex-ruby","<3.0"  # >=3.0 breaks on Ruby 1.8
-#gem "citeproc-ruby","<1.0"  # >=1.0 breaks on Ruby <1.9.3
+#gem "citeproc-ruby","1.1.14"  # >=1.0 breaks on Ruby <1.9.3
 gem "bibtex-ruby"  # >=3.0 breaks on Ruby 1.8
 gem "citeproc-ruby"  # >=1.0 breaks on Ruby <1.9.3
+gem "csl-styles"
 gem "puma"
 gem "dm-core",">=1.0"
 gem "dm-types",">=1.0"

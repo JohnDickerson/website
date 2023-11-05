@@ -3,6 +3,7 @@ require 'sinatra'
 require 'bundler'
 require 'set'
 require 'citeproc'
+require 'csl/styles'
 
 Bundler.require
 $ROOT = File.expand_path("../", __FILE__)
@@ -10,6 +11,8 @@ $ROOT = File.expand_path("../", __FILE__)
 # Load all helpers and routes
 Dir.glob(File.dirname(__FILE__) + '/helpers/*.rb') {|f| load f}
 Dir.glob(File.dirname(__FILE__) + '/routes/*.rb') {|f| load f}
+
+set :haml, :escape_html => false
 
 if $bib.nil? or $bib_short.nil?
    puts "Reading from bibliography file; this may take a while ..."

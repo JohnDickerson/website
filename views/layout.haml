@@ -29,13 +29,13 @@
   %body
 
     #wrap
-      =haml :navbar
+      !=haml :navbar
 
       .container.marketing
-        =yield
+        !=yield
 
 
-    =haml :footer
+    !=haml :footer
 
     / Load Bootstrap plugins after this point
     %script{:type => "text/javascript", :src => "/vendor/js/bootstrap.min.js"}

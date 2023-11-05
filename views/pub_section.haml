@@ -19,7 +19,7 @@
             %td
               %strong
                 = entry[:title]                
-              - if include_links and File.exists?(File.join(settings.public_folder,"#{entry[:pdfpath]}"))               
+              - if include_links and File.exist?(File.join(settings.public_folder,"#{entry[:pdfpath]}"))
                 = " (#{entry[:pdflink]}) #{entry[:ga_track]}"
             %td
               - if year == 'Working'
@@ -28,11 +28,3 @@
                 = entry[:year]
             %td
               = entry[:venue]
-            
-/
-  - pub_map.sort.reverse.map do |year, pub_keys|
-    .row  
-      .col-md-2.text-right
-        %h3.nopad.nomarg= year
-      .col-md-9
-        = rep_pubs_list(pub_keys, include_links)
