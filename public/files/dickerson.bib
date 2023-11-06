@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% John P. Dickerson
+%% John P. Dickerson 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -24,6 +24,7 @@
 @String{CHI = "Conference on Human Factors in Computing Systems (CHI)"}
 @String{CIKMConf = "International Conference on Information and Knowledge Management (CIKM)"}
 @String{CogSciConf = "Conference of the Cognitive Science Society (CogSci)"}
+@String{COR = "Computers \& Operations Research (COR)"}
 @String{ECConf = "Conference on Economics and Computation (EC)"}
 @String{FAccT = "Conference on Fairness, Accountability, and Transparency (FAccT)"}
 @String{FOSINTConf = "International Symposium on Foundations of Open Source Intelligence and Security Informatics"}
@@ -35,6 +36,7 @@
 @String{INFORMS = "INFORMS Annual Conference"}
 @String{INFORMSHC = "INFORMS Healthcare Conference"}
 @String{ISMP = "International Symposium on Mathematical Programming (ISMP)"}
+@String{IUI = "International Conference on Intelligent User Interfaces (IUI)"}
 @String{JAIR = "Journal of Artificial Intelligence Research (JAIR)"}
 @String{JISICConf = "Joint Intelligence \& Security Informatics Conference (JISIC)"}
 @String{KDD = "International Conference on Knowledge Discovery and Data Mining (KDD)"}
@@ -52,6 +54,7 @@
 @String{WSC = "Winter Simulation Conference (WSC)"}
 @String{WINE = "Conference on Web and Internet Economics (WINE)"}
 @String{OR = "Operations Research"}
+@String{AJPH = "American Journal of Public Health"}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% journal titles
@@ -61,42 +64,122 @@
 @String{ACMTOCL = "ACM Transactions on Computational Logic (TOCL)"}
 @String{ASMEJCISE = "ASME Journal of Computing and Information Science in Engineering (JCISE)"}
 @String{JMD = "Journal of Mechanical Design (JMD)"}
-
+@String{NMI = "Nature Machine Intelligence"}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% bibliography starts here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-@article{McElfresh19:Ethics,
-title={Ethics and Mechanism Design in Kidney Exchange},
-author={McElfresh, Duncan and Conitzer, Vince and Dickerson, John P.},
-year=2018,
-note={Working paper; available upon request.},
-}
-
-@article{Rosemarin17:Learning,
-title={Learning to Schedule Deadline- and Operator-Sensitive Tasks},
-author={Rosemarin, Hanan and Dickerson, John P. and Kraus, Sarit},
-year=2017,
-journal={CoRR},
-volume={abs/1706.06051},
-note={Working paper.},
-}
-
-@article{Plaut16:Hardness,
-title={Hardness of the Pricing Problem for Chains in Barter Exchange},
-author={Plaut, Benjamin and Dickerson, John P. and Sandholm, Tuomas},
-year=2016,
-journal={CoRR},
-volume={abs/1606.00117},
-note={Working paper.},
-}
-
-
 
 %%%%%%%%%%%%%%%
 %% Year 2023 %%
 %%%%%%%%%%%%%%%
+
+@conference{Dickerson23:Doubly,
+author={John P. Dickerson and Seyed Esmaeili and Jamie Morgenstern and Claire Jie Zhang},
+title={Doubly Constrained Fair Clustering},
+year=2023,
+booktitle=NeurIPS,
+}
+
+@conference{Knittel23:Fair,
+author={Marina Knittel and Max Springer and John P. Dickerson and MohammadTaghi Hajiaghayi},
+title={Fair, Polylog-Approximate Low-Cost Hierarchical Clustering},
+year=2023,
+booktitle=NeurIPS,
+}
+
+@conference{Nanda23:Diffused,
+author={Vedant Nanda and Till Speicher and John P. Dickerson and Krishna Gummadi and Soheil Feizi and Adrian Weller},
+title={Diffused Redundancy in Pre-trained Representations},
+year=2023,
+booktitle=NeurIPS,
+}
+
+@conference{Dooley23:Rethinking,
+author={Samuel Dooley and Rhea Sukthanker and John P. Dickerson and Colin White and Frank Hutter and Micah Goldblum},
+title={Rethinking Bias Mitigation: Fairer Architectures Make for Fairer Face Recognition},
+year=2023,
+booktitle=NeurIPS,
+note={Oral.},
+}
+
+@conference{Sullivan23:Reward,
+author={Ryan Sullivan and Akarsh Kumar and Shengyi Huang and John P. Dickerson and Joseph Suarez},
+title={Reward Scale Robustness for Proximal Policy Optimization via {D}reamer{V}3 Tricks},
+year=2023,
+booktitle=NeurIPS,
+}
+
+@conference{Verma23:RecRec,
+author={Verma, Sahil and Singh, Ashudeep and Boonsanong, Varich and Dickerson, John P. and Shah, Chirag},
+title ={{R}ec{R}ec: Algorithmic Recourse for Recommender Systems},
+year=2023,
+booktitle=CIKMConf,
+}
+
+@inproceedings{Bako23:User-Driven,
+  author       = {Hannah K. Bako and
+                  Alisha Varma and
+                  Anuoluwapo Faboro and
+                  Mahreen Haider and
+                  Favour Nerrise and
+                  Bissaka Kenah and
+                  John P. Dickerson and
+                  Leilani Battle},
+  title        = {User-Driven Support for Visualization Prototyping in {D3}},
+  booktitle    = IUI,
+  year         = {2023},
+}
+
+@article{McElfresh23:MatchingNMI,
+  title={Matching Algorithms for Blood Donation},
+  author={McElfresh, Duncan C. and Kroer, Christian and Pupyrev, Sergey and Sankararaman, Karthik Abinav and Chauvin, Zack and Dexter, Neil and Sodomka, Eric and Dickerson, John P.},
+journal=NMI,
+year=2023,
+}
+
+@conference{Herlihy23:Planning,
+title={Planning to Fairly Allocate: Probabilistic Fairness in the Restless Bandit Setting},
+author={Herlihy, Christine and Prins, Aviva and Srinivasan, Aravind and Dickerson, John P.},
+year=2023,
+booktitle=KDD,
+}
+
+@conference{Cherepanova23:Deep,
+title={A Deep Dive into Dataset Imbalance and Bias in Face Identification},
+author={Cherepanova, Valeriia and Reich, Steven and Dooley, Samuel and Souri, Hossein and Dickerson, John P. and Goldblum, Micah and Goldstein, Tom},
+year=2023,
+booktitle=AIESConf,
+}
+
+@conference{Schwarzschild23:Reckoning,
+title={Reckoning with the Disagreement Problem: Explanation Consensus as a Training Objective},
+author={Schwarzschild, Avi and Cembalest, Max and Rao, Karthik and Hines, Keegan and Dickerson, John P.},
+year=2023,
+booktitle=AIESConf,
+}
+
+@conference{Knittel23:Generalized,
+title={Generalized Reductions: Making any Hierarchical Clustering Fair and Balanced with Low Cost},
+author={Knittel, Marina and Springer, Max and Dickerson, John P. and Hajiaghayi, Mohammad},
+booktitle=ICML,
+year=2023,
+}
+
+@conference{Curry23:Differentiable,
+title={Differentiable Economics for Randomized Affine Maximizer Auctions},
+author={Curry, Michael and Sandholm, Tuomas and Dickerson, John P.},
+booktitle=IJCAIConf,
+year=2023,
+}
+
+@conference{Duppala23:Group,
+title={Group Fairness in Set Packing Problems},
+author={Duppala, Sharmila and Luque, Juan and Dickerson, John P. and Srinivasan, Aravind},
+booktitle=IJCAIConf,
+year=2023,
+}
 
 @conference{Datta23:Tensions,
 title="Tensions Between the Proxies of Human Values in {AI}",
@@ -130,16 +213,14 @@ booktitle=AAAI,
   title={On the Importance of Architectures and Hyperparameters for Fairness in Face},
   author={Dooley, Samuel and Sukthanker, Rhea Sanjay and Dickerson, John P. and White, Colin and Hutter, Frank and Goldblum, Micah},
   year=2022,
-  booktitle={Trustworthy and Socially Responsible
-Machine Learning (TSRML) Workshop at NeurIPS-22},
+  booktitle={Trustworthy and Socially Responsible Machine Learning (TSRML) Workshop at NeurIPS-22},
 }
 
 @conference{Cherepanova22:DeepTSRML,
   title={A Deep Dive into Dataset Imbalance and Bias in Face Identification},
   author={Cherepanova, Valeriia and Reich, Steven and Dooley, Samuel and Souri, Hossein and Dickerson, John P. and Goldblum, Micah and Goldstein, Tom},
   year=2022,
-  booktitle={Trustworthy and Socially Responsible
-Machine Learning (TSRML) Workshop at NeurIPS-22},
+  booktitle={Trustworthy and Socially Responsible Machine Learning (TSRML) Workshop at NeurIPS-22},
 }
 
 @conference{Cherepanova22:DeepMLSW,
@@ -167,6 +248,16 @@ booktitle={Workshop on Distribution Shifts (DistShift) at NeurIPS-22},
 %% Year 2022 %%
 %%%%%%%%%%%%%%%
 
+@article{Allen22:Using,
+title={Using Inverse Optimization to Learn Cost Functions in Generalized Nash Games},
+author={Allen, Stephanie and Gabriel, Steven A. and Dickerson, John P.},
+journal=COR,
+volume=142,
+pages={105721},
+year=2022,
+}
+
+
 @conference{Dooley22:Robustness,
  title={Robustness Disparities in Face Detection},
  author={Dooley, Samuel and Wei, George and Goldstein, Tom and Dickerson, John P.},
@@ -175,11 +266,11 @@ booktitle={Workshop on Distribution Shifts (DistShift) at NeurIPS-22},
 }
 
 @conference{McElfresh22:Generalizability,
-  title={On the Generalizability and Predictability of Recommender Systems},
-  author={McElfresh, Duncan and Khandagale, Sujay and Valverde, Jonathan and Dickerson, John P. and White, Colin},
+  title={On the Generalizability and Predictability of Recommender Systems}, 
+  author={McElfresh, Duncan and Khandagale, Sujay and Valverde, Jonathan and Dickerson, John P. and White, Colin}, 
   booktitle=NeurIPS,
-  year={2022},
-}
+  year={2022}, 
+} 
 
 @conference{Esmaeili22:Fair,
 title={Fair Labelled Clustering},
@@ -318,7 +409,7 @@ note={Abstract of poster},
 }
 
 @conference{McElfresh21:ImprovingATC,
-title={Improving Policy-constrained Kidney Exchange via Pre-screening},
+title={Improving Policy-constrained Kidney Exchange via screening},
 author={McElfresh, D. C. and Curry, M. and Booker, S. and Stuart, M. and Stewart, D. and Leishman, R. and Sandholm, T. and Dickerson, J. P.},
 year=2021,
 booktitle=ATC,
@@ -326,7 +417,7 @@ note={Abstract of poster},
 }
 
 @conference{Booker21:ImpactATC,
-title={Impact of Pre-Screening on {OPTN} Kidney Paired Donation Pilot Program Transplant and Refusal Rates},
+title={Impact of Screening on {OPTN} Kidney Paired Donation Pilot Program Transplant and Refusal Rates},
 author={Booker, S. E. and Leishman, R. and Musick, J. and Oley, M. and Sandholm, T. and Dickerson, J. P. and Pavlakis, M. and Casingal, V.},
 year=2021,
 booktitle=ATC,
@@ -475,7 +566,7 @@ booktitle=ICML,
 }
 
 @misc{Dickerson21:AdvancesUCSD,
-  title={Advances in Deep Learning for Auction Design:Fairness, Robustness, and Expressiveness},
+  title={Advances in Deep Learning for Auction Design: Fairness, Robustness, and Expressiveness},
   author={Dickerson, John P.},
   year=2021,
   month=4,
@@ -484,7 +575,7 @@ booktitle=ICML,
 }
 
 @misc{Dickerson21:AdvancesHarvard,
-  title={Advances in Deep Learning for Auction Design:Fairness, Robustness, and Expressiveness},
+  title={Advances in Deep Learning for Auction Design: Fairness, Robustness, and Expressiveness},
   author={Dickerson, John P.},
   year=2021,
   month=4,
@@ -494,7 +585,7 @@ booktitle=ICML,
 
 
 @misc{Dickerson21:AdvancesNorthwestern,
-  title={Advances in Deep Learning for Auction Design:Fairness, Robustness, and Expressiveness},
+  title={Advances in Deep Learning for Auction Design: Fairness, Robustness, and Expressiveness},
   author={Dickerson, John P.},
   year=2021,
   month=3,
@@ -639,8 +730,7 @@ numpages = {17},
   year=2020,
   month=10,
   day=21,
-  note={Invited talk, Adobe-Academia Workshop on
-Real-time Experience Optimization},
+  note={Invited talk, Adobe-Academia Workshop on Real-time Experience Optimization},
 }
 
 @misc{Dickerson20:StandardizationANSI,
@@ -698,7 +788,7 @@ booktitle=NeurIPS,
 }
 
 @conference{McElfresh20:Improving,
-title={Improving Policy-Constrained Kidney Exchange via Pre-Screening},
+title={Improving Policy-Constrained Kidney Exchange via Screening},
 author={McElfresh, Duncan C. and Curry, Michael and Sandholm, Tuomas and Dickerson, John P.},
 year=2020,
 booktitle=NeurIPS,
@@ -937,15 +1027,6 @@ booktitle={Machine Learning and Causal Inference for Improved Decision Making wo
   note={Invited talk, Enterprise Modeling and Analytics, Fannie Mae},
 }
 
-@misc{Dickerson19:MatchingFannie,
-  title={Matching Market Design via Machine Learning},
-  author={Dickerson, John P.},
-  year=2019,
-  month=12,
-  day=3,
-  note={Invited talk, Enterprise Modeling and Analytics, Fannie Mae},
-}
-
 @misc{Dickerson19:AINIST,
   title={AI, Ethics, and Market Design},
   author={Dickerson, John P.},
@@ -1022,7 +1103,7 @@ year=2019,
 booktitle=RLDM,
 }
 
-@conference{Shafahi19:Logit-Similarity,
+@conference{Shafahi19:Logit-Similarity, 
 title={Logit-Similarity: Defending, Understanding, and Generalizing Logit-Squeezing},
 author={Shafahi, Ali and Ghiasi, Mohammad Amin and Najibi, Mahyar and Huang, Furong and Dickerson, John P. and Goldstein, Tom},
 year=2019,
@@ -1158,7 +1239,7 @@ booktitle=AAAI,
   year=2018,
   month=aug,
   day=7,
-  note={Three 1.5-hour lectures at the Cornell, Maryland, Max Planck Pre-doctoral Research School (CMMRS) 2018},
+  note={Three 1.5-hour lectures at the Cornell, Maryland, Max Planck doctoral Research School (CMMRS) 2018},
 }
 
 @misc{Dickerson18:IncreasingFacebook,
@@ -1491,7 +1572,7 @@ pages={639--679},
 }
 
 @phdthesis{Dickerson16:Unified,
-  author       = {John P. Dickerson},
+  author       = {John P. Dickerson}, 
   title        = {A Unified Approach to Dynamic Matching and Barter Exchange},
   school       = {Carnegie Mellon University},
   year         = 2016,
@@ -1501,8 +1582,7 @@ pages={639--679},
 
 @conference{Dickerson16:Position,
 title={Position-Indexed Formulations for Kidney Exchange},
-author={Dickerson, John P. and Manlove, David and Plaut, Benjamin and
-                  Sandholm, Tuomas and Trimble, James},
+author={Dickerson, John P. and Manlove, David and Plaut, Benjamin and Sandholm, Tuomas and Trimble, James},
 year=2016,
 booktitle=ECConf,
 }
@@ -1525,8 +1605,7 @@ note={Invited talk, {H}ealthcare {A}pplications {S}ociety cluster},
 
 @conference{Dickerson16:PositionINFORMS,
 title={Position-Indexed Formulations for Kidney Exchange},
-author={Dickerson, John P. and Manlove, David and Plaut, Benjamin and
-                  Sandholm, Tuomas and Trimble, James},
+author={Dickerson, John P. and Manlove, David and Plaut, Benjamin and Sandholm, Tuomas and Trimble, James},
 year=2016,
 booktitle=INFORMS,
 note={Invited talk, {H}ealthcare {A}pplications {S}ociety cluster},
@@ -1809,7 +1888,7 @@ booktitle=AAAI,
 
 @conference{Erickson14:Endogenously,
 title={Endogenously- but not Exogenously-driven Selective Sustained Attention is Related to Learning in a Classroom-like Setting in Kindergarten Children},
-author={Erickson, Lucy C. and Thiessen, Erik D. and Godwin, Karrie E. and Dickerson, John P. and Fisher, Anna V.},
+author={Erickson, Lucy C. and Thiessen, Erik D. and Godwin, Karrie E. and Dickerson, John P. and Fisher, Anna V.}, 
 year=2014,
 booktitle=CogSciConf,
 }
@@ -1993,7 +2072,7 @@ pages={12:1--12:39},
 
 @incollection{Dickerson13:Using,
 title={Using Temporal Probabilistic Rules to Learn Group Behavior},
-author={Dickerson, John P. and Simari, Gerardo I. and Subrahmanian, V.S.},
+author={Dickerson, John P. and Simari, Gerardo I. and Subrahmanian, V.S.}, 
 booktitle={Handbook of Computational Approaches to Counterterrorism},
 year=2013,
 publisher={Springer New York},
@@ -2002,7 +2081,7 @@ editor={Subrahmanian, V.S.}
 
 @incollection{Simari13:Policy,
 title={Policy Analytics Generation using Action Probabilistic Logic Programs},
-author={Simari, Gerardo I. and Dickerson, John P. and Sliva, Amy and Subrahmanian, V.S.},
+author={Simari, Gerardo I. and Dickerson, John P. and Sliva, Amy and Subrahmanian, V.S.}, 
 booktitle={Handbook of Computational Approaches to Counterterrorism},
 year=2013,
 publisher={Springer New York},
@@ -2090,7 +2169,7 @@ year=2012
 
 @incollection{Shakarian12:Geospatial,
 title={Geospatial Abduction with Adaptive Adversaries},
-author={Shakarian, Paulo and Dickerson, John P. and Subrahmanian, V.S.},
+author={Shakarian, Paulo and Dickerson, John P. and Subrahmanian, V.S.}, 
 booktitle={Geospatial Abduction: Principles and Practice},
 publisher={Springer},
 editor={Shakarian, Paulo and Subrahmanian, V.S.},
